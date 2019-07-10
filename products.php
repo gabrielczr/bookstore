@@ -26,20 +26,14 @@ if ($db_found) {
     //$f[] = $db_record['title'];
 
     //echo "<input type='checkbox' id = '$checkboxBookIf' name ='addtocart[]. $checkboxBookIf'>Add to cart";
-    echo "<input type='checkbox' id = '$checkboxBookIf' name ='$checkboxBookIf' value = '$checkboxBookIf'>Add to cart";
+    echo "<input type='checkbox' id = '$checkboxBookIf' name ='checkboxBook[]' value = '$checkboxBookIf'>Add to cart";
   }
 } else
   echo "$db_name not found<br>";
 
 if (isset($_POST['submitOrder'])) {
 
-  //var_dump($_POST);
-
-  $sessinBookId = $_POST;
-  $_SESSION["sessinBookId"] = $_POST;
-
-  var_dump($_SESSION);
-  unset($_SESSION['submitOrder']);
+  $_SESSION["sessinBookId"] = $_POST['checkboxBook'];
 
   var_dump($_SESSION);
 }
