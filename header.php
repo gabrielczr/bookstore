@@ -10,6 +10,7 @@ session_start();
       <li><a href="cart.php">Cart</a></li>
       <li><a href="contact.php">Contact</a></li>
       <li><a href="myaccount.php">My Account</a></li>
+      <li><a href="cart.php">Cart</a></li>
       <li>
 
       </li>
@@ -17,7 +18,7 @@ session_start();
   </nav>
 
   <div>
-    <?php include 'login.php' ?>
+
 
   </div>
 

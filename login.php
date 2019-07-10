@@ -36,7 +36,7 @@ if ($db_found && isset($_POST['submit'])) {
       var_dump($_SESSION);
     } else {
       echo ' You\'re not registered';
-      header("Location:register.php");
+      //header("Location:register.php");
     }
   }
 }
